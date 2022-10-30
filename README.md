@@ -90,7 +90,7 @@ Another implementation of the interface IDiffFinder might be introduced to incre
 #### 1- .Net Core Swagger
 By running the project, a swagger window will be opened automatically that displays the list of APIs and gives the opportunity to call them.
 
-[SCREENSHOT]
+![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/Swagger.png)
 
 #### 2- Unit Testing
 All of the main components have unit tests that test all the possible seniors (at least all that I could think of).
