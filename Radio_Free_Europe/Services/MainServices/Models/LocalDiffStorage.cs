@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 namespace Radio_Free_Europe.Services.MainServices.Models
 {
 
-    /**
-     * This class utilises the Local storage to store the diff data in a dictionary
-     * Advantages:
-     * - Simple
-     * - Very Fast
-     * - Easy To Implement
-     * Limitations:
-     * - At the moment, the data lives forever (as long as the service is running)
-     * - There is a risk of race condition
-     * - All data lives in the memory
-     * - this approach would be challenging if the service/host, as the requests with the same ID mustend up at the same server.
-     */
+    ///<summary>
+    /// This class utilises the Local storage to store the diff data in a dictionary
+    /// Advantages:
+    /// - Simple
+    /// - Very Fast
+    /// - Easy To Implement
+    /// Limitations:
+    /// - At the moment, the data lives forever (as long as the service is running)
+    /// - There is a risk of race condition
+    /// - All data lives in the memory
+    /// - this approach would be challenging if the service/host, as the requests with the same ID mustend up at the same server.
+    ///</summary>
     public class LocalDiffStorage : IDiffStorage
     {
         private Dictionary<long, DIffRecord> Records = new Dictionary<long, DIffRecord>();

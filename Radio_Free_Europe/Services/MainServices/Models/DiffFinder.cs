@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 namespace Radio_Free_Europe.Services.MainServices.Models
 {
     public class DiffFinder: IDiffFinder
-    {
-        // this function will do couple of checks before it's call ComputeOfsets
-        // first check , make sure the inputs are not null
-        // second check, make sure inputs are the same length
-        // third check, input are not the same
+    {   
+         /// <summary>
+        /// this function will do couple of checks before it's call ComputeOfsets
+        /// first check , make sure the inputs are not null
+        /// second check, make sure inputs are the same length
+        /// third check, input are not the same
+        /// </summary>
+        /// <param name="input1"></param>
+        /// <param name="input2"></param>
+        /// <returns></returns>
+
         public DiffResults Compute(string input1, string input2)
         {
             DiffResults output = new DiffResults();
@@ -35,7 +41,7 @@ namespace Radio_Free_Europe.Services.MainServices.Models
             }
             return output;
         }
-        // compute of sets will save all the indexes of different inputs and add them to the list
+        /// compute of sets will save all the indexes of different inputs and add them to the list
         private List<int> ComputeOfsets(string input1, string input2)
         {
             List<int> offsets = new List<int>();

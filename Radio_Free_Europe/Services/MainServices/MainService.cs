@@ -9,9 +9,10 @@ namespace Radio_Free_Europe.Services.MainServices
 {
     public class MainService : IMainService
     {
-        // Injecting both of the diffFinder and diffStorage as interfaces.
-        //This allows having multiple implementations, for example:
-        //we can have a new implementation for diffStorage which utilizes the DB for storing the diff data.
+        ///<summary> Injecting both of the diffFinder and diffStorage as interfaces.
+        ///This allows having multiple implementations, for example:
+        ///we can have a new implementation for diffStorage which utilizes the DB for storing the diff data.
+        ///</summary>
         readonly IDiffFinder diffFinder;
         readonly IDiffStorage diffStorage;
         public MainService(IDiffStorage diffStorage, IDiffFinder diffFinder)
