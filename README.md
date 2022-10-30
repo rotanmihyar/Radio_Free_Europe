@@ -71,7 +71,7 @@ LocalDiffStorage is an implementation of the IDiffStorage interface that utilize
 
 `    `- All data lives in the memory
 
-`    `- this approach would be challenging if the service/host, as the requests with the same ID must end up at the same server.
+`    `- this approach would be challenging if the service had more than one service/host, as the requests with the same ID must end up at the same server.
 
 `    `- the data will be lost upon restarting the service
 
