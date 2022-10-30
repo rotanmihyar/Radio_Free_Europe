@@ -16,7 +16,9 @@ The project introduces a service that exposes 3 main APIs. The primary responsib
 
 An API that allows passing the First/Left string for an ID to be compared or Dffrestiated.
 
-[SCREENSHOT]
+![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/GetApi.png)
+![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/PostLeftApi.png)
+![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/PostRightApi.png)
 
 
 #### SetRight
