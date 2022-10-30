@@ -14,7 +14,7 @@ The project introduces a service that exposes 3 main APIs. The primary responsib
   - **Id:** Path Parameter that represents the ID of that diff.
   - **diffData:** JSON Body Parameter that represents the content of the string.
 
-An API that allows passing the First/Left string for an ID to be compared or Dffrestiated.
+An API that allows passing the First/Left string for an ID to be compared .
 
 
 ![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/PostLeftApi.png)
@@ -28,7 +28,7 @@ An API that allows passing the First/Left string for an ID to be compared or Dff
   - **Id:** Path Parameter that represents the ID of that diff.
   - **diffData:** JSON Body Parameter that represents the content of the string.
 
-An API that allows passing the Second/Right string for an ID to be compared or Dffrestiated.
+An API that allows passing the Second/Right string for an ID to be compared .
 
 ![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/PostRightApi.png)
 
@@ -93,13 +93,13 @@ By running the project, a swagger window will be opened automatically that displ
 ![image](https://github.com/rotanmihyar/Radio_Free_Europe/blob/master/Screenshots/Swagger.png)
 
 #### 2- Unit Testing
-All of the main components have unit tests that test all the possible seniors (at least all that I could think of).
+All of the main components have unit tests that test all the possible scenarios (at least all that I could think of).
 
 
 ### Missing Items
 Unfortunately, My team and I are having a couple of hard days at work (tight release deadline), and I couldn’t implement all of the requirements. Some of these missing requirements are:
 
-- The APIs accept the body to JSON as a string, not BASE64 encoded.
+- The APIs accept the body to be a JSON as a string, not BASE64 encoded.
 - I have done the task on the weekend before the task deadline. Unfortunately, I didn’t understand the requirement that the diff must provide the offsets alongside the lengths of the inputs. And there is no time to ask for clarifications (I apologise for that). So I have improvised and implemented the diff functionality to return only the offsets.
 
 
