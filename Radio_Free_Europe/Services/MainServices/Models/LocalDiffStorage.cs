@@ -17,6 +17,7 @@ namespace Radio_Free_Europe.Services.MainServices.Models
      * - At the moment, the data lives forever (as long as the service is running)
      * - There is a risk of race condition
      * - All data lives in the memory
+     * - this approach would be challenging if the service/host, as the requests with the same ID mustend up at the same server.
      */
     public class LocalDiffStorage : IDiffStorage
     {

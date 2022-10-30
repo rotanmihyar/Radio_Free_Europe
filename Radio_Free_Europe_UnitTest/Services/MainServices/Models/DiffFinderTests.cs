@@ -18,7 +18,7 @@ namespace Radio_Free_Europe_UnitTest.Services.MainServices.Models
             var response = finder.Compute("Test1", "Test1");
             //check
             Assert.AreEqual(DiffStates.InputsAreEqual.ToString(), response.DiffStates);
-            Assert.IsNull(response.DiffOfSets);
+            Assert.IsNull(response.DiffOffsets);
         }
         [Test]
         public void GivenDIfferentValueSameLength_whenCompare_ThenInputAreDifferentResult()
@@ -29,7 +29,7 @@ namespace Radio_Free_Europe_UnitTest.Services.MainServices.Models
             var response = finder.Compute("Test1", "Test2");
             //check
             Assert.AreEqual(DiffStates.InputAreDifferent.ToString(), response.DiffStates);
-            Assert.AreEqual(response.DiffOfSets, new List<long> { "Test2".IndexOf("2") });
+            Assert.AreEqual(response.DiffOffsets, new List<long> { "Test2".IndexOf("2") });
         }
         [Test]
         public void GivenDIfferentValueSameDifferentLength_whenCompare_ThenInputsOfDifferentSizeResult()
@@ -40,7 +40,7 @@ namespace Radio_Free_Europe_UnitTest.Services.MainServices.Models
             var response = finder.Compute("Test1", "Test12");
             //check
             Assert.AreEqual(DiffStates.InputsOfDifferentSize.ToString(), response.DiffStates);
-            Assert.IsNull(response.DiffOfSets);
+            Assert.IsNull(response.DiffOffsets);
         }
         [Test]
         public void GivenNullValues_whenCompare_ThenInputIncompleteResult()
@@ -50,7 +50,7 @@ namespace Radio_Free_Europe_UnitTest.Services.MainServices.Models
             var response = finder.Compute(null, null);
             //check
             Assert.AreEqual(DiffStates.InputIncomplete.ToString(), response.DiffStates);
-            Assert.IsNull(response.DiffOfSets);
+            Assert.IsNull(response.DiffOffsets);
         }
     }
 }

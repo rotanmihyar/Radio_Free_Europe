@@ -51,7 +51,7 @@ namespace Radio_Free_Europe_UnitTest.Services.MainServices
             var DiffResult = new DiffResults
             {
                 DiffStates = Radio_Free_Europe.Enums.DiffStates.InputIncomplete.ToString(),
-                DiffOfSets = null
+                DiffOffsets = null
             };
             Mock <IDiffStorage> diffStorage = new Mock<IDiffStorage>();
             Mock<IDiffFinder> diffFinder = new Mock<IDiffFinder>();

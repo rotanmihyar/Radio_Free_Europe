@@ -30,13 +30,12 @@ namespace Radio_Free_Europe.Services.MainServices.Models
             }
             else
             {
-                output.DiffOfSets = ComputeOfsets(input1, input2);
+                output.DiffOffsets = ComputeOfsets(input1, input2);
                 output.DiffStates = Enums.DiffStates.InputAreDifferent.ToString();
             }
             return output;
         }
         // compute of sets will save all the indexes of different inputs and add them to the list
-        // after that , it will return then as a list to compute function
         private List<int> ComputeOfsets(string input1, string input2)
         {
             List<int> offsets = new List<int>();
